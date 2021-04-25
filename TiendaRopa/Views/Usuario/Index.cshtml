@@ -1,0 +1,110 @@
+@model IEnumerable<TiendaRopa.Models.Usuario>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<section id="catalogue" class="catalogue section-bg" style="text-align: center;">
+
+<div class="section-title">
+          <h2>Lista de Usuarios</h2>
+          <p>Observa todos los usuarios registrados</p>
+</div>
+
+
+<p>
+    <button class="btn btn-success"class="btn btn-success" onclick="window.location='@Url.Action("Create", "Usuario")'">Registrar</button>
+</p>
+<div class="container">
+<table class="table table-hover" >
+    <thead class="tables" >
+        <tr style="text-align: center;">
+                <th scope="col">
+                    #
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.nombre)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.apellidos)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.edad)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.distrito)
+                </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr style="text-align: center;">
+            <th scope="row">
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a> |
+
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidos)
+            </td>
+               <td>
+                @Html.DisplayFor(modelItem => item.edad)
+            </td>
+               <td>
+                @Html.DisplayFor(modelItem => item.distrito)
+            </td>
+        </tr>
+    }        
+    </tbody>    
+</table>
+</section>
+
+
+
+
+@if ((String)TempData["prueba"] == "prueba01")
+{
+    <input value="hola" id="hola01" type="hidden">
+}
+
+@if ((String)TempData["prueba02"] == "prueba02") 
+{
+    <input value="hola" id="prueba02" type="hidden">
+}
+
+    <script>
+        
+        var x = document.getElementById('hola01').value;
+
+        if(x == "hola") {
+        
+            Swal.fire(
+                'Registro exitoso',
+                'El usuario ha sido registrado exitosamente',
+                'success'
+            )
+  
+        }
+
+       
+
+    </script>
+
+   <script>
+        
+        var y = document.getElementById('prueba02').value;
+
+        if(y == "hola") {
+
+            Swal.fire(
+                'Editado correctamente',
+                'El usuario se ha editado correctamente',
+                'success'
+            )
+        }
+   </script> 
+

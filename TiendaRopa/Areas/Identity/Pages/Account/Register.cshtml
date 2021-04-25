@@ -1,0 +1,69 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="fondo">
+<div class="row">
+
+
+<form class="formulario" id="account" method="post">
+    <br>
+    <h1 >Registrese</h1>
+    <div class="contenedor">     
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input asp-for="Input.Email" type="text" placeholder="Introduce tu correo">
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input asp-for="Input.Password" type="password" placeholder="Introduce tu contraseña">
+        </div>
+
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input asp-for="Input.ConfirmPassword" type="password" placeholder="Confirma tu contraseña">
+        </div>
+
+         <div class="get-started" style="text-align: center;">
+               <input type="submit" value="Registrar" class="button">   
+         </div>
+         
+         <p>Al registrarte aceptas nuestra Politica de Privacidad</p>
+         <p>¿Si tienes una cuenta? <a class="link" asp-page="./Login">Inicia Sesión</a></p>
+     </div>
+</form>
+</div>
+
+
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+    
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

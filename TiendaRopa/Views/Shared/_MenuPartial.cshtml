@@ -1,0 +1,21 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+
+
+    @if (@User.Identity.Name=="admin@gmail.com")
+    {
+        <li class="center">
+        <a class="nav-link colorLetter" asp-area="" asp-controller="Producto" asp-action="Index">Registrar Libro</a>
+        </li>
+        <li class="center">
+            <a class="nav-link colorLetter" asp-area="" asp-controller="Usuario" asp-action="Index">Listar Usuario</a>
+        </li>
+    }
+}
+
+</ul>
