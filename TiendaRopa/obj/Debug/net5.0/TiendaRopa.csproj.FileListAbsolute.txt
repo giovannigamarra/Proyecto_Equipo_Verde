@@ -202,3 +202,15 @@ C:\Users\jhon\Documents\trabajo del programacion 1\clonacion\progra1-2021\progra
 C:\Users\jhon\Documents\trabajo del programacion 1\clonacion\progra1-2021\progra1-2021\Prototipo-Aplicacion-Web-EQUIPO-VERDE\TiendaRopa\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\jhon\Documents\trabajo del programacion 1\clonacion\progra1-2021\progra1-2021\Prototipo-Aplicacion-Web-EQUIPO-VERDE\TiendaRopa\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\jhon\Documents\trabajo del programacion 1\clonacion\progra1-2021\progra1-2021\Prototipo-Aplicacion-Web-EQUIPO-VERDE\TiendaRopa\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.csprojAssemblyReference.cache
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.AssemblyInfoInputs.cache
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.AssemblyInfo.cs
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.csproj.CoreCompileInputs.cache
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.MvcApplicationPartsAssemblyInfo.cs
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.MvcApplicationPartsAssemblyInfo.cache
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.RazorAssemblyInfo.cache
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.RazorAssemblyInfo.cs
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.dll
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\ref\TiendaRopa.dll
+D:\Tienda Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.pdb

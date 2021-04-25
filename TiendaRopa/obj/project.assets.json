@@ -7876,31 +7876,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jhon\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\emax_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj",
+      "projectUniqueName": "D:\\Tienda Ropa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
       "projectName": "TiendaRopa",
-      "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj",
-      "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\obj\\",
+      "projectPath": "D:\\Tienda Ropa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
+      "packagesPath": "C:\\Users\\emax_\\.nuget\\packages\\",
+      "outputPath": "D:\\Tienda Ropa\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\emax_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7970,7 +7963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
