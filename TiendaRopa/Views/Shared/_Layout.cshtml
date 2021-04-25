@@ -3,59 +3,47 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Index</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link href="~/lib/icofont/icofont.min.css" rel="stylesheet">
-    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <title>@ViewData["Title"] - TiendaRopa</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-  <header style="background-color: #E74C3C;">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  box-shadow " style="background-color: #3498DB;">
-            <div class="container" style="background-color: #3498DB;">
-                 <div class="logo p-2">
-                  <h1 class="text-light"><a asp-controller="Home" asp-action="Index">WISH<span></span></a></h1>
-                 </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TiendaRopa</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                       <partial name="_LoginPartial" />
-                        <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item center">
-                           <a class="nav-link colorLetter" class="center" asp-controller="Home" asp-action="Index"><b>Inicio</a></b>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                         <li class="nav-item center">
-                            <a class="nav-link colorLetter" class="center" asp-controller="Catalogo" asp-action="Index"><b>Catalogo</a></b>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item center">
-                            <a class="nav-link colorLetter" class="center" asp-controller="Orden" asp-action="Carrito"><b>Carrito</a></b>
-                        </li>
-                        <li class="nav-item center">
-                            <a class="nav-link colorLetter" class="center" asp-controller="Conocenos" asp-action="Index"><b>Conocenos</a></b>
-                        </li>
-                        <li class="nav-item center">
-                            <a class="nav-link colorLetter" class="center" asp-controller="Contactenos" asp-action="Index"><b>Contactenos</a></b>
-                        </li>
-                        <partial name="_MenuPartial" />
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-        <main role="main">
+    <div class="container">
+        <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - TiendaRopa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/jquery.easing/jquery.easing.min.js"></script>
-    <script src="~/js/site.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
-    
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
