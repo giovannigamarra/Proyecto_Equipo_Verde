@@ -12,5 +12,7 @@ namespace TiendaRopa.Data
             : base(options)
         {
         }
+
+       
     }
 }
