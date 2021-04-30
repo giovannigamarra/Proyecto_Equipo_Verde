@@ -1,6 +1,6 @@
 namespace TiendaRopa.Controllers
 {
-    public class ContactoController
+    public class Catalogo
     {
         
     }

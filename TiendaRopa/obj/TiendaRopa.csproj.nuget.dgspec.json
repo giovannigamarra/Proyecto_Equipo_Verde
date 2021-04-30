@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj": {}
+    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj": {
+    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj",
+        "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
         "projectName": "TiendaRopa",
-        "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\TiendaRopa.csproj",
+        "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
         "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Prototipo-Aplicacion-Web-EQUIPO-VERDE\\TiendaRopa\\obj\\",
+        "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[5.0.5, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.5, )"
@@ -67,14 +63,6 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.5, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[5.0.5.1, )"
             }
           },
           "imports": [
