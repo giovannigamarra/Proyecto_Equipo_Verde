@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {}
+    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {
+    "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
+        "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
         "projectName": "TiendaRopa",
-        "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
+        "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
         "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
+        "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
