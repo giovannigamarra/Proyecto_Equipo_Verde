@@ -1460,11 +1460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jhon\\Documents\\Proyecto_Equipo_Verde-1\\TiendaRopa\\TiendaRopa.csproj",
+      "projectUniqueName": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
       "projectName": "TiendaRopa",
-      "projectPath": "C:\\Users\\jhon\\Documents\\Proyecto_Equipo_Verde-1\\TiendaRopa\\TiendaRopa.csproj",
+      "projectPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
       "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jhon\\Documents\\Proyecto_Equipo_Verde-1\\TiendaRopa\\obj\\",
+      "outputPath": "C:\\Users\\jhon\\Documents\\trabajo del programacion 1\\clonacion\\progra1-2021\\progra1-2021\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
