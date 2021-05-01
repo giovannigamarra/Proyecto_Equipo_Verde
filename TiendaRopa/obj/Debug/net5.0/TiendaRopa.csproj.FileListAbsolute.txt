@@ -14,8 +14,6 @@ D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.TagHelpers.
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.TagHelpers.output.cache
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.RazorCoreGenerate.cache
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Catalogos\Hombre.cshtml.g.cs
-D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Catalogos\Mujeres.cshtml.g.cs
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -82,3 +80,4 @@ D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\bin\Debug\net5.0\runtimes\win-x86\nativ
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.Views.pdb
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.csproj.CopyComplete
 D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.genruntimeconfig.cache
+D:\Ropa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Catalogo\Index.cshtml.g.cs
