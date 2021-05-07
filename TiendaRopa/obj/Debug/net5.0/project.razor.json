@@ -15619,6 +15619,11 @@
   "RootNamespace": "TiendaRopa",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\Contactenos\\Index.cshtml",
+      "TargetPath": "Views\\Contactenos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15654,6 +15659,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\Carrito\\Index.cshtml",
+      "TargetPath": "Views\\Carrito\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15666,6 +15676,16 @@
     {
       "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\Catalogo\\Index.cshtml",
+      "TargetPath": "Views\\Catalogo\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\Views\\Conocenos\\Index.cshtml",
+      "TargetPath": "Views\\Conocenos\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

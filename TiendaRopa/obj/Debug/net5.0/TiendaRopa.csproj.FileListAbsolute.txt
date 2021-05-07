@@ -249,3 +249,7 @@ C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\ne
 C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.Views.pdb
 C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.csproj.CopyComplete
 C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\TiendaRopa.genruntimeconfig.cache
+C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Conocenos\Index.cshtml.g.cs
+C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Contactenos\Index.cshtml.g.cs
+C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Carrito\Index.cshtml.g.cs
+C:\Users\Antony\Desktop\TiendaRopa\Proyecto_Equipo_Verde\TiendaRopa\obj\Debug\net5.0\Razor\Views\Catalogo\Index.cshtml.g.cs
