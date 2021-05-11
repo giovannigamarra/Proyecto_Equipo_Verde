@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {}
+    "C:\\Users\\jhon\\Documents\\2022\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {
+    "C:\\Users\\jhon\\Documents\\2022\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
+        "projectUniqueName": "C:\\Users\\jhon\\Documents\\2022\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
         "projectName": "TiendaRopa",
-        "projectPath": "C:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
-        "packagesPath": "C:\\Users\\Antony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antony\\Desktop\\TiendaRopa\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
+        "projectPath": "C:\\Users\\jhon\\Documents\\2022\\Proyecto_Equipo_Verde\\TiendaRopa\\TiendaRopa.csproj",
+        "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jhon\\Documents\\2022\\Proyecto_Equipo_Verde\\TiendaRopa\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Antony\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,23 +46,39 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             }
           },
           "imports": [
@@ -77,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

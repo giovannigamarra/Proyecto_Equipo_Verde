@@ -1,0 +1,132 @@
+@model TiendaRopa.Models.Usuario
+
+
+@{
+    ViewData["Title"] = "Usuario";
+}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<section id="catalogue" class="catalogue section-bg" style="text-align: center;">
+
+<div class="section-title">
+          <h2>Editar Usuarios</h2>
+          <p>Edita el usuario completando el formulario</p>
+</div>
+
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-4">
+       
+        <form asp-controller="Usuario" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            
+              <div class="form-group formM">
+            <label asp-for="nombre" class="colorForm"></label>
+                <input asp-for="nombre" class="form-control"/>
+                <span asp-validation-for="nombre" class="text-danger"></span>
+        </div class="form-group">
+
+              <div class="form-group formM">
+                <label asp-for="apellidos"  class="colorForm"></label>
+                <input asp-for="apellidos" class="form-control"/>
+                <span asp-validation-for="apellidos" class="text-danger"></span>
+
+            </div>
+            
+               <div class="form-group formM">
+                <label asp-for="direccion"  class="colorForm"></label>
+                <input asp-for="direccion" class="form-control"/>
+                <span asp-validation-for="direccion" class="text-danger"></span>
+
+            </div>
+          <div class="form-group formM">
+                <label asp-for="distrito"  class="colorForm"></label>
+                <input asp-for="distrito" class="form-control"/>
+                <span asp-validation-for="distrito" class="text-danger"></span>
+
+            </div>
+
+              <div class="form-group formM">
+                <label asp-for="Email" class="colorForm"></label>
+                <input asp-for="Email" class="form-control"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+            </div>
+
+               <div class="form-group formM">
+                <label asp-for="celular"  class="colorForm"></label>
+                <input asp-for="celular" class="form-control"/>
+                <span asp-validation-for="celular" class="text-danger"></span>
+
+            </div>
+              <div class="form-group formM">
+                <label asp-for="edad" class="colorForm"></label>
+                <input asp-for="edad" class="form-control"/>
+                <span asp-validation-for="edad" class="text-danger"></span>
+
+            </div>
+
+                <div class="form-group">
+                    <label class="colorForm" asp-for="sexo" class="col-form-label col-sm-2 pt-0"></label>
+
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <label class="colorForm"><input  asp-for="sexo" type="radio" name="sexo" value="1">Masculino</label>
+                    </div>
+                    
+                    <div class="form-check">
+                      <label class="colorForm"><input  asp-for="sexo" type="radio" name="sexo" value="2">Femenino</label>
+                    </div>
+                  </div>
+                </div>
+                <span asp-validation-for="sexo" class="text-danger"></span>
+             
+            <div class="form-group text-center">
+                 <button type="submit" class="btn btn-success">Editar</button> 
+                 <button  class="btn btn-danger" onclick="window.location='@Url.Action("Index", "Usuario")'" >Cancelar</button> 
+            </div>                
+
+        </form>
+            
+        <td>@Html.DisplayTextFor(model => model.Respuesta)</td>    
+    
+    </div>
+</div>
+</div>
+</section>
+
+<script>
+    document.querySelector('#Editar').addEventListener('submit', function(e) {
+      var form = this;
+      
+      e.preventDefault();
+      
+      swal({
+          title: "¿Está seguro de la acción?",
+          text: "Esto cambiará los datos del producto",
+          icon: "warning",
+          buttons: [
+            'Cancelar',
+            'Continuar'
+          ],
+          dangerMode: true,
+        }).then(function(isConfirm) {
+          if (isConfirm) {
+           
+              form.submit();
+          
+          } else {
+            swal("Acción cancelada", "El producto no se ha modificado", "error");
+          }
+        });
+    });
+
+    
+  </script>
+  
+  <style>
+    .swal-button--confirm {
+      background-color: #DD6B55;
+    }
+  </style>

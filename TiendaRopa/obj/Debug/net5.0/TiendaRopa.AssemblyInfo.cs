@@ -11,7 +11,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-TiendaRopa-3403E47C-40B7-4176-AC20-FCA49D05983B")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-TiendaRopa-B60B369E-BC77-4BA0-9615-23E7DBD70787")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TiendaRopa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

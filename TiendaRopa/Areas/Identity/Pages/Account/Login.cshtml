@@ -1,0 +1,48 @@
+@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+<div class="fondo">
+<div class="row">
+
+
+<form class="formulario" id="account" method="post">
+    <br>
+    <h1>Iniciar Sesión</h1>
+    <div class="contenedor">     
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input asp-for="Input.Email" type="text" placeholder="Introduce tu correo">
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input asp-for="Input.Password" type="password" placeholder="Introduce tu contraseña">
+        </div>
+
+         <div class="form-group">
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe">
+                            <input asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+        </div>
+
+         <div class="get-started" style="text-align: center;">
+               <input type="submit" value="Iniciar Sesión" class="button">    
+         </div>
+
+        
+         <p>Da click en Iniciar Sesión para logearte a nuestra Ropas</p>
+         <p>¿No tienes una cuenta? <a class="link" asp-page="./Register">Registrate </a></p>
+     </div>
+    </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

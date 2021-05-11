@@ -2095,7 +2095,7 @@ proto.hideItemElements = function( elems ) {
  * @returns {Outlayer.Item} item
  */
 proto.getItem = function( elem ) {
-  // loop through items to get the one that matches
+  // loop through items to get Topitop that matches
   for ( var i=0; i < this.items.length; i++ ) {
     var item = this.items[i];
     if ( item.element == elem ) {

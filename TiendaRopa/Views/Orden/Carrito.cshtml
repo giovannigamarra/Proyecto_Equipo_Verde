@@ -1,0 +1,92 @@
+@model IEnumerable<TiendaRopa.Models.OrdenDetail>
+@{
+    ViewData["Title"] = "Carrito de Compras";
+}
+
+<section id="catalogue" class="catalogue section-bg" style="text-align: center;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Carrito de Compras</h2>
+          <p data-aos="fade-in">Los producto seleccionados apareceran aca</p>
+        </div>
+
+
+    <div class="row catalogue-container" data-aos="fade-up">
+
+    <table class="table table-hover">
+    <thead class="tables">
+        <tr>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Precio)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Cantidad)
+                </th>
+        </tr>
+    </thead>
+	@foreach (var item in Model)
+	{
+        @if (item.Email == @User.Identity.Name)
+        {
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            </tr>
+        }
+	}
+    </tbody>    
+</table>
+           
+            </div>
+    </section>
+
+      <div class="get-started" style="text-align: center;">
+                  <a  style="text-align: center;border-radius: 4px;" asp-area="" asp-controller="Orden" asp-action="Proceso">Confirmar</a>
+      </div>
+      <br>
+
+<footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Topitop</h3>
+            <p>Dirección: Av La Molina, 305 Las gardenias </p>
+            <p>Telefono: +51 996644587</p>
+          </div>
+        </div>
+
+        
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+ 
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Copyright</span></strong>. Todos los derechos reservador
+      </div>
+      <div class="credits">
+        Diseñado por <a href="#"> Topitop</a>
+      </div>
+    </div>
+  </footer>	
