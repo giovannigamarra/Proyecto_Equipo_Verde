@@ -4,48 +4,58 @@
     ViewData["Title"] = "Contacto";
 }
 
-<div class="row">
-    <div class="col-md-4">  
-        <h1 class="display-4">Contacto</h1>
+<section id="contact" class="contact section-bg">
+     <div class="container"></div>
+
+     <div class="section-title">
+         <h2 data-aos="fade-in">Contactenos</h2>
+        
         <form asp-controller="Contacto" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group formM">
+             <li class="form-group formM" >
                 <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
+                <input asp-for="Nombre" class="form-control"  placeholder="Introduce tu nombre" style="text-align: center" value="" style="padding-top: 7px;"/>
                 <span asp-validation-for="Nombre" class="text-danger"></span>
+              
             </div>    
 
-            <div class="form-group">
+            <div class="form-group formM">
+                <li class="form-group formM ">
+            
                 <label asp-for="Apellido" class="control-label"></label>
-                <input asp-for="Apellido" class="form-control" />
+                <input asp-for="Apellido" class="form-control"placeholder="Introduce tu apellido" style="text-align:center" value="" style="padding-top: 7px;" />
                 <span asp-validation-for="Apellido" class="text-danger"></span>
+                
             </div>               
                    
-            <div class="form-group">
+            <div class="form-group formM">
+                <li class="form-group formM " >
                 <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
+                <input asp-for="Email" class="form-control"  placeholder="Introduce tu email" style="text-align: center" value="" style="padding-top: 7px;"/>
             </div>               
 
-            <div class="form-group">
+            <div class="form-group formM" >
+                <li class="form-group formM ">
                 <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" />
+                <input asp-for="Telefono" class="form-control" placeholder="Introduce tu telefono" style="text-align: center"value="" style="padding-top: 7px;"/>
             </div>               
 
-            <div class="form-group">
+            <div class="form-group formM">
+                <li class="form-group formM">
                 <label asp-for="Asunto" class="control-label"></label>
-                <input asp-for="Asunto" class="form-control" />
+                <input asp-for="Asunto" class="form-control" placeholder="Introduce el asunto" style="text-align: center" value=""  style="padding-top: 7px;" />
             </div>    
 
-            <div class="form-group">
-                <label asp-for="Mensaje" class="control-label"></label>
-                <textarea asp-for="Mensaje" class="form-control">
-                    <span asp-validation-for="Mensaje" class="text-danger"></span>
-                </textarea>
-            </div>                
-
+            <div class="form-groupformM">
+               <li class="form-group formM">
+                <label asp-for="Mensaje" class="control-label" style="center"></label>
+                <input  asp-for="Mensaje" class="form-control" placeholder="Introduce el mensaje" style="text-align: center" value="" style="padding-top: 7px;"/>
+            
+            </div>          
             <div class="form-group">
                  <button type="submit" class="btn btn-primary">Enviar</button> 
-            </div>                
+            </div>        
 
         </form>
             
