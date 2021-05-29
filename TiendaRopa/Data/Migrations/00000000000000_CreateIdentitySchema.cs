@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace TiendaRopa.Data.Migrations
 {
@@ -47,11 +48,62 @@ namespace TiendaRopa.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "t_ropa",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    name = table.Column<string>(nullable: false),
+                    modelo = table.Column<string>(nullable: false),
+                    marca = table.Column<string>(nullable: false),
+                    sku = table.Column<string>(nullable: false),
+                    talla = table.Column<string>(nullable: false),
+                    precio = table.Column<decimal>(nullable: false),
+                    pages = table.Column<int>(nullable: false),
+                    descripcion = table.Column<string>(nullable: false),
+                    imagen = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_t_ropa", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "t_orden_detail",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    productoid = table.Column<int>(nullable: false),
+                    email = table.Column<string>(nullable: true),
+                    cantidad = table.Column<decimal>(nullable: false),
+                    precio = table.Column<decimal>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_t_orden_detail", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "t_usuario",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    name = table.Column<string>(nullable: false),
+                    email = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_t_usuario", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     RoleId = table.Column<string>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -72,7 +124,7 @@ namespace TiendaRopa.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserId = table.Column<string>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -132,6 +184,25 @@ namespace TiendaRopa.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+  migrationBuilder.CreateTable(
+                name: "Contacto",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Nombre = table.Column<string>(nullable: false),
+                    Apellido = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    Telefono = table.Column<string>(maxLength: 9, nullable: false),
+                    Asunto = table.Column<string>(nullable: true),
+                    Mensaje = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Contacto", x => x.ID);
+                });
+                
+                
             migrationBuilder.CreateTable(
                 name: "AspNetUserTokens",
                 columns: table => new
@@ -204,8 +275,20 @@ namespace TiendaRopa.Data.Migrations
             migrationBuilder.DropTable(
                 name: "AspNetUserRoles");
 
+                   migrationBuilder.DropTable(
+                name: "Contacto");
+
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "t_ropa");
+
+            migrationBuilder.DropTable(
+                name: "t_orden_detail");
+
+            migrationBuilder.DropTable(
+                name: "t_usuario");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

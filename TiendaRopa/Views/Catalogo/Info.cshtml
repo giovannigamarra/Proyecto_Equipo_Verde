@@ -1,0 +1,123 @@
+@model TiendaRopa.Models.Producto
+@{
+   
+    ViewData["Title"] = "Informacion";
+}
+<br>
+<br>
+<div class="container">
+    <div class="card" style="border: none;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <a asp-area="" asp-controller="Home" asp-action="Info">
+                    <img class="card-img-top" 
+                    style="height: 410px; width: 100%; " src="@Model.imagen">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4 style="text-align: center;" class="colorForm">@Model.nombre</h4>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="colorForm">Modelo: @Model.modelo</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <p Class="colorForm">DESCRIPCIÓN: @Model.descripcion</p>
+                       
+                    </li>
+ <li>
+                        <p Class="colorForm">Talla: @Model.talla
+               
+                   
+<select name="Producto">
+
+<option>S</option>
+
+<option>M</option>
+
+<option>L</option>
+<option>XL</option>
+</select>  
+</p>
+            
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 style="text-align: center;" class="colorForm">PRECIO</h4>
+                <hr>
+                <ul class="list-unstyled" style="text-align: center;">
+
+                    <li class="colorForm">@Model.precio</li>
+                    <hr>
+                    <li><a asp-controller="Orden" asp-action="AddItem" asp-route-id="@Model.ID" class="btn btn-success"><i class="icofont-cart"></i> Agregar</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <hr>
+        <h3>Ropas parecidos</h3>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <span class="border"><img class="card-img-top" 
+                    style="height: 200px; width: 80%; display: block;" src="~/img/ropas/adidas.jpg"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <span class="border"><img class="card-img-top" 
+                    style="height: 200px; width: 80%; display: block;" src="~/img/ropas/mujer.jpg"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <span class="border"><img class="card-img-top" 
+                    style="height: 200px; width: 80%; display: block;" src="~/img/ropas/run.jpg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Topitop</h3>
+            <p>Dirección: Av La Molina, 305 Las gardenias </p>
+            <p>Telefono: +51 996644587</p>
+          </div>
+        </div>
+
+        
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+ 
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Copyright</span></strong>. Todos los derechos reservador
+      </div>
+      <div class="credits">
+        Diseñado por <a href="#"> Topitop</a>
+      </div>
+    </div>
+  </footer>	

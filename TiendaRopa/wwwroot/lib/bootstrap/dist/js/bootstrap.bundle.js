@@ -3933,7 +3933,7 @@
      * @class Popper
      * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
      * @param {HTMLElement} popper - The HTML element used as the popper
-     * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
+     * @param {Object} options - Your custom options to override Topitops defined in [Defaults](#defaults)
      * @return {Object} instance - The generated Popper.js instance
      */
     function Popper(reference, popper) {

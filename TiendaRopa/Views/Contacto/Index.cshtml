@@ -1,0 +1,59 @@
+@model IEnumerable<TiendaRopa.Models.Contacto>
+
+<h2>Asuntos de los  Contactos</h2>
+
+<p>
+    <a asp-action="Create">Crear contacto</a>
+</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+                <th scope="col">
+                    Acción
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th> 
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Apellido)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Mensaje)
+                </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    @if (Model.Count() == 0) {
+            <tr>
+                <td colspan="5" class="text-center">No se encontraron registros.</td>
+            </tr>
+    }
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th scope="row">
+               
+                <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mensaje)
+            </td>
+        </tr>
+    }        
+    </tbody>    
+</table>

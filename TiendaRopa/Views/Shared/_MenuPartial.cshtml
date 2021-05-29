@@ -5,16 +5,31 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-
+<li class="nav-item center">
+<a class="nav-link colorLetter" class="center" asp-controller="Orden" asp-action="Carrito">Carrito</a>
+</li>
 
     @if (@User.Identity.Name=="admin@gmail.com")
     {
+
+ <li class="center">
+        <a class="nav-link colorLetter" asp-area="" asp-controller="Contacto" asp-action="Index">Consultas</a>
+    </li>
+
+
         <li class="center">
-        <a class="nav-link colorLetter" asp-area="" asp-controller="Producto" asp-action="Index">Registrar Ropas</a>
+        <a class="nav-link colorLetter" asp-area="" asp-controller="Producto" asp-action="Index">Registrar</a>
         </li>
+
+ <li class="center">
+            <a class="nav-link colorLetter" asp-area="" asp-controller="Producto" asp-action="Listar">Lista</a>
+        </li>
+
         <li class="center">
-            <a class="nav-link colorLetter" asp-area="" asp-controller="Usuario" asp-action="Index">Listar Usuario</a>
+            <a class="nav-link colorLetter" asp-area="" asp-controller="Usuario" asp-action="Index">Empleados</a>
         </li>
+
+        
     }
 }
 

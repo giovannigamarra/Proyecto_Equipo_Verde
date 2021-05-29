@@ -1,0 +1,61 @@
+@model TiendaRopa.Models.Contacto
+
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<section id="contact" class="contact section-bg">
+      <div class="container"></div>
+
+        <div class="section-title">
+
+
+
+        <h2 data-aos="fade-in">Contactenos</h2>
+        
+        <form asp-controller="Contacto" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>    
+
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>               
+                   
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>               
+
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+            </div>               
+
+            <div class="form-group">
+                <label asp-for="Asunto" class="control-label"></label>
+                <input asp-for="Asunto" class="form-control" />
+            </div>    
+
+            <div class="form-group">
+                <label asp-for="Mensaje" class="control-label"></label>
+                <textarea asp-for="Mensaje" class="form-control">
+                    <span asp-validation-for="Mensaje" class="text-danger"></span>
+                </textarea>
+            </div>                
+
+            <div class="form-group">
+                 <button type="submit" class="btn btn-primary">Enviar</button> 
+            </div>                
+
+        </form>
+            
+        <td>@Html.DisplayTextFor(model => model.Mensajes)</td>    
+    
+    </div>
+</div>

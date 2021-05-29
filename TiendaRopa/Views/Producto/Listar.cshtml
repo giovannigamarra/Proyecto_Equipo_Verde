@@ -1,0 +1,112 @@
+@model IEnumerable<TiendaRopa.Models.Producto>
+@{
+    ViewData["Title"] = "Productos";
+}
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<br>
+<br>
+<div class="section-title">
+          <h2 >Ropas Registrados</h2>
+          <p>Visualiza todos los ropas registrados de nuestra tienda de ropas Topitop</p>
+</div>
+<p>
+    <button class="btn btn-success"class="btn btn-success" onclick="window.location='@Url.Action("Index", "Producto")'">Registrar</button>
+</p>
+<div class="container" >
+<table class="table table-hover">
+    <thead class="tables">
+        <tr class="center">
+                <th scope="col">
+                    #
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.nombre)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.modelo)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.precio)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.imagen)
+                </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr class="center">
+            <th scope="row">
+                <a asp-action="Edit" asp-route-id="@item.ID">Modificar</a>| 
+                <a asp-action="Delete" asp-route-id="@item.ID" id="delete">Borrar</a>
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+               <div class="card img" style="width: 12rem;">
+               <img src="@item.imagen" class="card-img-top"  alt="...">
+               <div class="card-body">
+
+            </td>
+
+        </tr>
+    }        
+    </tbody>    
+</table>
+</div>
+
+
+@if ((String)TempData["prueba"] == "prueba01")
+{
+    <input value="hola" id="hola01" type="hidden">
+}
+
+@if ((String)TempData["prueba02"] == "prueba02") 
+{
+    <input value="hola" id="prueba02" type="hidden">
+}
+
+    <script>
+        
+        var x = document.getElementById('hola01').value;
+
+        if(x == "hola") {
+        
+            Swal.fire(
+                'Registro exitoso',
+                'La ropa ha sido registrado exitosamente',
+                'success'
+            )
+  
+        }
+
+       
+
+    </script>
+
+   <script>
+        
+        var y = document.getElementById('prueba02').value;
+
+        if(y == "hola") {
+
+            Swal.fire(
+                'Editado correctamente',
+                'La ropa se ha editado correctamente',
+                'success'
+            )
+        }
+   </script> 
+

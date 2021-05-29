@@ -1,212 +1,48 @@
+@model IEnumerable<TiendaRopa.Models.Producto>
 @{
     ViewData["Title"] = "Catalogo";
 }
 
+<section id="catalogue" class="catalogue section-bg">
+      <div class="container">
 
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  
-
-
-
-
-  
-</div>
-<br>
-<br>
-
-
- <div class="section-title">
-          <h2 data-aos="fade-in"> Catalogo </h2>
-
+        <div class="section-title">
+          <h2 data-aos="fade-in">Nuestras ropas</h2>
+          <p data-aos="fade-in">Los mejores ropas para agregarlos a su tienda de Topitop</p>
         </div>
 
-    <section id="about" class="about section-bg">
-       
-	<div class="main">
-      <div class="shop_top">
-		<div class="container">
-			<div class="row shop_box-top">
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<span class="sale-box">
-						<span class="sale-label">Sale!</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="reducedfrom">$66.00</span>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<span class="sale-box">
-						<span class="sale-label">Sale!</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="reducedfrom">$66.00</span>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="reducedfrom">$66.00</span>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
+
+    <div class="row catalogue-container" data-aos="fade-up">
+
+	@foreach (var item in Model)
+
+
+
+	{
+		<div class="col-lg-4 catalogue-item filter-app">
+            <div style="text-align:center;" >
+        		<img src="@item.imagen" class="card-img-top" alt="..." style=" height: 480px;">
+            </div>
+			<div class="catalogo" style="height: 290px;">
+				<div style="text-align:center;" class="card-body" >
+					<h5 class="card-title" style="color:#fdd067;">@Html.DisplayFor(modelItem => item.nombre)</h5>
+						<p class="card-text">@Html.DisplayFor(modelItem => item.descripcion)</p>
+				<div style="margin-top: 30px;">
+						<p style="text-align: center;"><a class="btn btn-primary" disabled><i class="icofont-price"></i> S/ @Html.DisplayFor(modelItem => item.precio)</a></p>
+						<div class="col" style="text-align: center;">
+              <a asp-controller="Orden" asp-action="AddItem" asp-route-id="@item.ID" class="btn btn-primary"><i class="icofont-cart"></i> Agregar</a>
+              <a asp-action="Info" asp-route-id="@item.ID" class="btn btn-primary"><i class="icofont-info-circle"></i> Leer más</a>
+						</div>
+				</div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<span class="sale-box">
-						<span class="sale-label">Sale!</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="reducedfrom">$66.00</span>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="https://topitop.vteximg.com.br/arquivos/ids/186714-302-385/1780367_2.jpg?v=637317517458570000" class="img-thumbnail" alt="...">
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<span class="sale-box">
-						<span class="sale-label">Sale!</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">aliquam volutp</a></h3>
-						<p>Lorem ipsum consectetuer adipiscing </p>
-						<span class="reducedfrom">$66.00</span>
-						<span class="actual">$12.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-			</div>
-		 </div>
-	   </div>
-	 </div>
-	 
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+	}
 
 
     </section>
 
-  <footer id="footer">
+<footer id="footer">
 
     <div class="footer-top">
 
@@ -214,9 +50,9 @@
 
         <div class="row  justify-content-center">
           <div class="col-lg-6">
-            
-            <p>Dirección: Gamarra </p>
-            <p>Telefono: +51 941271896</p>
+            <h3>Topitop</h3>
+            <p>Dirección: Av La Molina, 305 Las gardenias </p>
+            <p>Telefono: +51 996644587</p>
           </div>
         </div>
 
@@ -231,14 +67,9 @@
  
     </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        <strong><span>&copy;  Copyright </span></strong>. Todos los derechos reservadorDiseñado por el Grupo Verde
-      </div>
+    
       <div class="credits">
-        Diseñado por el<a href="#"> Grupo Verde</a>
+        Diseñado por <a href="#">Topitop</a>
       </div>
     </div>
-  </footer>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </footer>	

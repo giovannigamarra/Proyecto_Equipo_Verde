@@ -1,0 +1,250 @@
+@model IEnumerable<TiendaRopa.Models.OrdenDetail>
+@{
+    ViewData["Title"] = "En Proceso";
+}
+<section id="catalogue" class="catalogue section-bg" style="text-align: center;">
+<div class="container">
+ 
+    <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Proceso de Pago</h2>
+        </div>
+
+
+    
+
+    <table class="table table-hover">
+    <thead class="tables">
+        <tr>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Precio)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Cantidad)
+                </th>
+        </tr>
+    </thead>
+	@foreach (var item in Model)
+	{
+        @if (item.Email == @User.Identity.Name)
+        {
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            </tr>
+        }
+	}
+    </tbody>    
+</table>
+  <div class="row" style="text-align: center;" >
+    <div class="col-md-1 order-md-1"></div>
+    <div class="col-md-10 order-md-1">
+      <h4 style="text-align: center;" class="mb-3 colorForm">Facturación</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3 formM">
+            <label for="firstName" class="colorForm">Primer Nombre</label>
+            <input type="text" class="form-control" id="firstName"  placeholder="Ingresa tu nombre" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 formM">
+            <label for="lastName" class="colorForm">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Ingresa tu apellido" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 formM">
+          <label for="email" class="colorForm">Email</label>
+          <input type="text" class="form-control" id="email" placeholder="Ingresa tu correo you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        
+
+        <div class="mb-3 formM">
+          <label for="address" class="colorForm">Dirección</label>
+          <input type="text" class="form-control" id="address" placeholder="Ingresa tu dirección 1234 Main St" required="">
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3 formM">
+          <label for="address2" class="colorForm">Dirección <span class="text-muted">(Opcional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Ingresa tu dirección">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3 formM">
+            <label for="country" class="colorForm">Pais</label>
+            <select class="custom-select d-block w-100" id="country" style="height: 45px;" required="">
+              <option value="">Elegir...</option>
+              <option>Perú</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona un pais valido
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 formM">
+            <label for="state" class="colorForm">Departamento</label>
+            <select class="custom-select d-block w-100" style="height: 45px;" id="state" required="">
+              <option value="">Elegir...</option>
+              <option>Arequipa</option>
+              <option>Lima</option>
+                <option>Amazonas</option>
+                  <option>Ancash</option>
+                    <option>Apurimac</option>
+                      <option>Ayacucho</option>
+                        <option>Cajamarca</option>
+                          <option>Callao</option>
+                            <option>Cusco</option>
+                              <option>Huancavelica</option>
+                                <option>Huanuco</option>
+                                  <option>Ica</option>
+                                    <option>Junín</option>
+                                      <option>La Libertad</option>
+                                        <option>Lambayeque</option>
+                                          <option>Loreto</option>
+                                            <option>Madre de Dios</option>
+                                            <option>Moquegua</option>
+                                            <option>Pasco</option>
+                                            <option>Piura</option>
+                                            <option>Puno</option>
+                                            <option>San Martín</option>
+<option>Tacna</option>
+<option>Tumbes</option>
+<option>Ucayali</option>
+
+
+
+            </select>
+            <div class="invalid-feedback">
+             Selecciona un departamento
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 formM">
+            <label for="zip" class="colorForm">Zip</label>
+            <input type="text" class="form-control" id="zip" style="height: 45px;" placeholder="Ingresa el Zip" required="">
+            <div class="invalid-feedback">
+             El Zip es requerido
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+
+        <label class="mb-3 colorForm" >Payment</label>
+
+        <div class="d-block my-3 formM">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" style="background-color: #213B52;" checked="" required="">
+            <label class="custom-control-label colorForm" for="credit" >Tarjeta de Credito</label>
+          </div>
+          <div class="custom-control custom-radio formM">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" style="background: #213B52;" required="">
+            <label class="custom-control-label colorForm" for="debit" >Tarjeta de Debito</label>
+          </div>
+          <div class="custom-control custom-radio formM">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" style="color: #213B52;" required="">
+            <label class="custom-control-label colorForm" for="paypal" >PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3 formM">
+            <label for="cc-name" class="colorForm">Nombre del Propietario de la Tarjeta</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="Ingresa el nombre del propietario de la tarjeta" required="">
+            <div class="invalid-feedback">
+              El nombre es requerido
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 formM">
+            <label for="cc-number" class="colorForm">Numero de la Tarjeta de Credito</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="Ingresa el numero de la tarjeta" required="">
+            <div class="invalid-feedback">
+              El numero de la tarjeta de credito es requerida
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3 formM">
+            <label for="cc-expiration" class="colorForm">Fecha de Expiración</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="Fecha de expiración es requerida" required="">
+            <div class="invalid-feedback">
+            Fecha de expiración es requerida
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 formM">
+            <label for="cc-cvv" class="colorForm">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="El CVV es requerido" required="">
+            <div class="invalid-feedback">
+              El CVV es requerido
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="button">
+        <button style="border-radius: 4px;" type="submit" onclick="confirm('Compra aceptada. Gracias por su compra');  clicked();">Comprar Ahora</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  <div class="col-md-1 order-md-1"></div>
+ </div> 
+ </section>
+
+
+
+
+
+<footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Topitop</h3>
+            <p>Dirección: Av La Molina, 305 Las gardenias </p>
+            <p>Telefono: +51 996644587</p>
+          </div>
+        </div>
+
+        
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+ 
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Copyright</span></strong>. Todos los derechos reservador
+      </div>
+      <div class="credits">
+        Diseñado por <a href="#">Topitop </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
