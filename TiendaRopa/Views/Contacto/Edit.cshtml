@@ -10,53 +10,36 @@
         <form asp-controller="Contacto" asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
-           <div class="form-group formM">
-<li class="form-group formM" >
+            <div class="form-group formM">
                 <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control"  placeholder="Introduce tu nombre" style="text-align: center" value="" style="padding-top: 7px;"/>
+                <input asp-for="Nombre" class="form-control" placeholder="Introduce tu nombre" style="text-align: center" value="" style="padding-top: 7px;" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
-              
             </div>    
 
             <div class="form-group formM">
-                <li class="form-group formM ">
-            
                 <label asp-for="Apellido" class="control-label"></label>
-                <input asp-for="Apellido" class="form-control"placeholder="Introduce tu apellido" style="text-align:center" value="" style="padding-top: 7px;" />
+                <input asp-for="Apellido" class="form-control"  placeholder="Introduce tu apellido" style="text-align: center" value="" style="padding-top: 7px;" />
                 <span asp-validation-for="Apellido" class="text-danger"></span>
-                
             </div>               
                    
             <div class="form-group formM">
-                <li class="form-group formM " >
                 <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control"  placeholder="Introduce tu email" style="text-align: center" value="" style="padding-top: 7px;"/>
-            </div>               
-
-            <div class="form-group formM" >
-                <li class="form-group formM ">
-                <label asp-for="Telefono" class="control-label"></label>
-                <input asp-for="Telefono" class="form-control" placeholder="Introduce tu telefono" style="text-align: center"value="" style="padding-top: 7px;"/>
+                <input asp-for="Email" class="form-control"   placeholder="Introduce tu email" style="text-align: center" value="" style="padding-top: 7px;"/>
             </div>               
 
             <div class="form-group formM">
-                <li class="form-group formM">
-                <label asp-for="Asunto" class="control-label"></label>
-                <input asp-for="Asunto" class="form-control" placeholder="Introduce el asunto" style="text-align: center" value=""  style="padding-top: 7px;" />
-            </div>    
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" placeholder="Introduce telefono" style="text-align: center" value="" style="padding-top: 7px;" />
+            </div>               
 
-            <div class="form-groupformM">
-               <li class="form-group formM">
-                <label asp-for="Mensaje" class="control-label" style="center"></label>
-                <input  asp-for="Mensaje" class="form-control" placeholder="Introduce el mensaje" style="text-align: center" value="" style="padding-top: 7px;"/>
             
-            </div>    
-             <div class="form-group">
-                 <button type="submit" class="btn btn-primary">Enviar</button> 
-            </div>         
-               </form> 
+            <div class="form-group">
+                 <button type="submit" class="btn btn-primary">Actualizar</button> 
+            </div>                
+
+        </form>
             
-        <td>@Html.DisplayTextFor(model => model.Respuesta)</td>    
+        <td>@Html.DisplayTextFor(model => model.Mensajes)</td>    
     
     </div>
 </div>
