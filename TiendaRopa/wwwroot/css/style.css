@@ -1,4 +1,7 @@
-﻿body {
+﻿input.placeholder {
+  text-align: center;
+}
+body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
@@ -739,11 +742,15 @@ p{
 
 .formM input, .formM select, .formM textarea{ 
   border: 5px solid #213B52;
+  margin: auto;
+  width: 500px;
 }
 
 .formM input:hover, .formM input:hover, .formM textarea:hover{
 
   border: 5px solid #EDC751;
+  margin: auto;
+  width: 500px;
 }
 
 /*--------------------------------------------------------------
