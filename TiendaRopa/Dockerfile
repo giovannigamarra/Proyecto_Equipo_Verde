@@ -13,6 +13,6 @@ COPY --from=build-env /app/out .
 
 #CAMBIAR AQUI EL NOMBRE DEL APLICATIVO
 #nombre de tu app busca en bin\Release\netcore5.0\plantitas.exe
-ENV APP_NET_CORE TiendaRopa.dll 
+ENV APP_NET_CORE plantitas.dll 
 
 CMD ASPNETCORE_URLS=http://*:$PORT dotnet $APP_NET_CORE
