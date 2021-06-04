@@ -10,7 +10,7 @@ env:
 #REGISTRARLO EN GITHUB\SETTINGS\SECRET (EL VALOR VIENE HEROKU\ACCOUNT SETTINGS\APPLICATIONS)
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 #CAMBIAR AQUI NOMBRE DEL APLICATIVO EN HEROKU EN EL DASHBOARD
-  HEROKU_APP_NAME: ${{ 'proyectoverde' }}
+  HEROKU_APP_NAME: ${{ 'pruebaproyecy' }}
 
 jobs:dotnet new mvc --auth Individual
   build_webapp:
