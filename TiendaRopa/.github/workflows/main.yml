@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+#NOMBRE DE LA RAMA DEBE CONINCIDER CON DONDE ESTAS COMITEANDO (master|main)
+      - MenuPrincipal
+
+name: Deploy to heroku
+
+env:
+#REGISTRARLO EN GITHUB\SETTINGS\SECRET (EL VALOR VIENE HEROKU\ACCOUNT SETTINGS\APPLICATIONS)
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+#CAMBIAR AQUI NOMBRE DEL APLICATIVO EN HEROKU EN EL DASHBOARD
+  HEROKU_APP_NAME: ${{ 'proyectoverde' }}
+
+jobs:dotnet new mvc --auth Individual
+  build_webapp:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Docker build
+      run: docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+
+    - name: Publish
+      run: |
+        heroku container:push web -a $HEROKU_APP_NAME
+        heroku container:release web -a $HEROKU_APP_NAME
