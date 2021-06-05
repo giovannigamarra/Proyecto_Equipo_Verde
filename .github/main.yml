@@ -1,10 +1,9 @@
-
-        on:
+on:
   push:
     branches:
 #NOMBRE DE LA RAMA DEBE CONINCIDER CON DONDE ESTAS COMITEANDO (master|main)
       - main
-
+      
 name: Deploy to heroku
 
 env:
