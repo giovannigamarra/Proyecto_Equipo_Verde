@@ -2,7 +2,7 @@ on:
   push:
     branches:
 #NOMBRE DE LA RAMA DEBE CONINCIDER CON DONDE ESTAS COMITEANDO (master|main)
-      - MenuPrincipal
+      - main
 
 name: Deploy to heroku
 
